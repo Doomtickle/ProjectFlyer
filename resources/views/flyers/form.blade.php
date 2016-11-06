@@ -1,3 +1,4 @@
+{{ csrf_field() }}
 <div class="form-group">
     <label for="street">Street: </label>
     <input type="text" name="street" id="street" class="form-control" value="{{ old('street') }}">
@@ -33,11 +34,6 @@
 <div class="form-group">
     <label for="description">Description: </label>
     <textarea type="text" name="description" id="description" class="form-control" value="{{ old('description') }}"></textarea>
-</div>
-
-<div class="form-group">
-    <label for="photos">Photos: </label>
-    <input type="file" name="photos" id="photos" class="form-control" value="{{ old('photos') }}">
 </div>
 
 <div class="form-group">
